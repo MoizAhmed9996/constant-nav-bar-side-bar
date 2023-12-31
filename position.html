@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Sidebar and Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 200px;
+            background-color: #0ec527;
+            color: #1a0c4b;
+            padding: 50px;
+            box-sizing: border-box;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            font-size: 15px;
+        }
+        #rightbar{
+            width: 200px;
+            background-color: rgb(13, 216, 13);
+            color:black;
+            padding: 50px;
+            box-sizing: border-box;
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-size: 15px;
+        }
+
+
+        #navbar {
+            width: 100%;
+            background-color: #ca1414;
+            color: #000000b0b707;
+            padding: 10px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+            margin-left: 200px; /* Adjusted based on sidebar width */
+            margin-top: 60px; /* Adjusted based on navbar height */
+            overflow: auto; /* Enable vertical scroll if content overflows */
+            position: relative;
+            font-size: 50px;
+            box-sizing: 100px;
+            background-color: light brown;
+            margin-right: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="sidebar">
+            <!-- Sidebar Content -->
+         <h2>List of Ten Countries</h2>
+    
+        <ul>
+            <li>United States</li>
+            <li>Canada</li>
+            <li>United Kingdom</li>
+            <li>Germany</li>
+            <li>France</li>
+            <li>Japan</li>
+            <li>Australia</li>
+            <li>Brazil</li>
+            <li>India</li>
+            <li>South Africa</li>
+        </ul>
+        </div>
+        
+            <div id="rightbar">
+                <!-- Sidebar Content -->
+                <h2>Sidebar</h2>
+                <p>This is the sidebar content.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sapiente aliquam ex officiis quod assumenda eum, voluptatem delectus repellat possimus consectetur maiores deleniti quasi maxime sit commodi vero unde ad?
+                </p>
+                
+        </div>
+
+
+        <div id="navbar">
+            <!-- Navbar Content -->
+            <h2>Navbar</h2>
+            <p>Made by a Software Engineer</p>
+        </div>
+
+        <div id="content">
+            <!-- Scrollable Content -->
+            <h2>Main Content</h2>
+            <p>This is the scrollable content area. It will move as you scroll.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Hic assumenda ducimus vitae eius ad incidunt voluptate veritatis quam accusamus aut,
+                 aspernatur quaerat culpa cumque reiciendis fugit modi praesentium. Ad, saepe!
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quia numquam sequi
+                 , nesciunt quam, explicabo, consectetur a dolorum commodi error excepturi nulla. 
+                 Similique natus voluptate nostrum quis deleniti quaerat neque.
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, debitis.
+                  Ipsum consequatur facere illo temporibus, libero omnis ab praesentium aperiam necessitatibus atque, porro, 
+                 illum accusamus et ducimus cum. Eveniet, aliquid?
+            </p>
+            <!-- Add your main content here -->
+        </div>
+    </div>
+
+</body>
+</html>
